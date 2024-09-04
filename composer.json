@@ -1,11 +1,17 @@
 {
-	"name": "wa0x6e/php-resque-ex",
+	"name": "iglocska/php-resque-ex",
 	"type": "library",
-	"description": "Redis backed library for creating background jobs and processing them later. PHP port based on resque for Ruby.",
-	"keywords": ["job", "background", "redis", "resque", "queue", "php"],
-	"homepage": "http://www.github.com/wa0x6e/php-resque-ex/",
+	"description": "Fork of wa0x6e's php-resque ex library for use in MISP, adding partial monolog 2.5.x support.",
+	"version": "1.4.0",
+	"keywords": ["job", "background", "redis", "resque", "queue", "php", "misp"],
+	"homepage": "http://www.github.com/iglocska/php-resque-ex/",
 	"license": "MIT",
 	"authors": [
+		{
+			"name": "Andras Iklody",
+			"email": "andras.iklody+github@gmail.com",
+			"homepage": "https://misp-project.org"
+		},
 		{
 			"name": "Wan Chen",
 			"email": "wan@wanki.moe"
@@ -16,9 +22,9 @@
 		}
 	],
 	"require": {
-		"php": ">=5.3.0",
+		"php": ">=7.2.0",
 		"ext-pcntl": "*",
-		"monolog/monolog": ">=1.2.0",
+		"monolog/monolog": ">=2.5.0",
 		"wa0x6e/monolog-init": ">=0.1.1"
 	},
 	"autoload": {
@@ -30,14 +36,15 @@
 		"fresque/fresque": "A command line tool to manage your workers"
 	},
 	"support": {
-		"email": "wan@wanki.moe",
-		"issues": "https://github.com/wa0x6e/php-resque-ex/issues",
-		"source": "https://github.com/wa0x6e/php-resque-ex"
+		"email": "andras.iklody+github@gmail.com",
+		"issues": "https://github.com/iglocska/php-resque-ex/issues",
+		"source": "https://github.com/iglocska/php-resque-ex"
 	},
 	"bin": [
 		"bin/resque"
 	],
 	"conflict": {
-		"chrisboulton/php-resque": "*"
+		"chrisboulton/php-resque": "*",
+		"wa0x6e/php-resque-ex": "*"
 	}
 }
