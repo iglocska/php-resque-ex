@@ -2,7 +2,7 @@
 	"name": "iglocska/php-resque-ex",
 	"type": "library",
 	"description": "Fork of wa0x6e's php-resque ex library for use in MISP, adding partial monolog 2.5.x support.",
-	"version": "1.4.0",
+	"version": "1.4.1",
 	"keywords": ["job", "background", "redis", "resque", "queue", "php", "misp"],
 	"homepage": "http://www.github.com/iglocska/php-resque-ex/",
 	"license": "MIT",
